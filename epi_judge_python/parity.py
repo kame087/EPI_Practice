@@ -2,7 +2,13 @@ from test_framework import generic_test
 
 
 def parity(x: int) -> int:
-    # TODO - you fill in here.
+    num_bits = 0
+    while x:
+        num_bits += x & 1
+        x >>= 1
+
+    if num_bits % 2 != 0:
+        return 1
     return 0
 
 
