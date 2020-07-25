@@ -31,29 +31,29 @@ def matrix_in_spiral_order(square_matrix: List[List[int]]) -> List[int]:
     while top <= bottom and left <= right:
         if direction == 0:
             # loop from left to right, while keeping top the same
-            # then updating top
+            # then updating top position index
             for i in range(left, right+1):
                 result.append((square_matrix[top][i]))
             top += 1
         elif direction == 1:
             # loop from top to bottom, while keeping right the same
-            # then updating right
+            # then updating right position index
             for i in range(top, bottom+1):
                 result.append((square_matrix[i][right]))
             right -= 1
         elif direction == 2:
             # loop from right to left, while keeping bottom the same
-            # then updating bottom
+            # then updating bottom position index
             for i in range(right, left-1, -1):
                 result.append(square_matrix[bottom][i])
             bottom -= 1
         elif direction == 3:
             # loop from bottom to top, while keeping left the same
-            # then updating left
+            # then updating left position index
             for i in range(bottom, top-1, -1):
                 result.append(square_matrix[i][left])
             left += 1
-        direction = (direction + 1) % 4
+        direction = (direction + 1) % 4 # this will update the position in a continuous cycle from 0 - 3
 
     if result:
         return result
