@@ -24,6 +24,8 @@ def matrix_in_spiral_order(square_matrix: List[List[int]]) -> List[int]:
     :param square_matrix:
     :return: result List[int]
     """
+    if len(square_matrix) == 0:
+        return []
     top, bottom, left, right = 0, len(square_matrix)-1, 0, len(square_matrix[0])-1 # starting indices for each "shell"
     direction = 0 # 0: L -> R, 1: T -> B, 2: R -> L, 3: B -> T
     result = []
@@ -55,10 +57,10 @@ def matrix_in_spiral_order(square_matrix: List[List[int]]) -> List[int]:
             left += 1
         direction = (direction + 1) % 4 # this will update the position in a continuous cycle from 0 - 3
 
-    if result:
+    if len(result) > 0:
         return result
-
-    return []
+    else:
+        return []
 
 
 if __name__ == '__main__':
