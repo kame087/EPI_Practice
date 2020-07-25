@@ -194,7 +194,7 @@ problem_mapping = {
                 "total": 204
             },
             "Python: dutch_national_flag.py": {
-                "passed": 0,
+                "passed": 204,
                 "total": 204
             }
         },
@@ -208,7 +208,7 @@ problem_mapping = {
                 "total": 505
             },
             "Python: int_as_array_increment.py": {
-                "passed": 0,
+                "passed": 505,
                 "total": 505
             }
         },
@@ -264,7 +264,7 @@ problem_mapping = {
                 "total": 402
             },
             "Python: buy_and_sell_stock.py": {
-                "passed": 0,
+                "passed": 402,
                 "total": 402
             }
         },
@@ -432,7 +432,7 @@ problem_mapping = {
                 "total": 51
             },
             "Python: spiral_ordering.py": {
-                "passed": 0,
+                "passed": 51,
                 "total": 51
             }
         },
