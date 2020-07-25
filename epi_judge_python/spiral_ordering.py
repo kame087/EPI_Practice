@@ -8,7 +8,8 @@ def matrix_in_spiral_order(square_matrix: List[List[int]]) -> List[int]:
     """
     HIGH LEVEL:
         Essentially you're "deshelling" each outer shell/bound starting with top -> right -> bottom -> left
-        updating the shell level (from outer top to inner top, etc) as you traverse each bound.
+        updating the shell level (from outer top to inner top, etc) as you traverse each bound, add it to the result
+        list.
 
         "top" being the lower bound of the row count i.e. 0
         "bottom" being the upper bound of the row count i.e len(square_matrix) - 1
