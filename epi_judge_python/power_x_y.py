@@ -6,7 +6,7 @@ def power(x: float, y: int) -> float:
     This is a brute force solution:
         basically use looping to calculate the power of a base.
         There is a quicker computation using bits. But I need to look into it.
-        Time: O(2^n), y is the power, it takes y-1 multiplications
+        Time: O(2^n), y = the power, and it takes y-1 multiplications
         Space: O(1)
 
     :param x:
