@@ -41,6 +41,8 @@ def reverse(x: int) -> int:
                 .
                 x = 0...BREAK OUT OF LOOP
 
+            Time: O(n), n = num of digits in x
+
     :param x:
     :return:
     """
