@@ -9,8 +9,7 @@ def find_maximum_subarray(A: List[int]) -> int:
         return 0
 
     if len(A) == 2:
-        maxElement = max(A)
-        maxSum = max(sum(A), maxElement)
+        maxSum = max(sum(A), max(A))
 
     currentSum = A[0]
     maxSum = A[0]
